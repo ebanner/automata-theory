@@ -1,6 +1,8 @@
 import Mathlib.Data.Set.Basic
 
-structure DFA («Σ» : Type) (Q : Type) where
-  q₀ : Q
+structure DFA where
+  Q : Type
+  «Σ» : Type
   δ : Q → «Σ» → Q
+  q₀ : Q
   F : Set Q
