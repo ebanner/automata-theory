@@ -18,5 +18,7 @@ def accepts (M : Automaton) (w : List M.«Σ») : Prop :=
   let q' := run M w
   q' ∈ M.F
 
-def L (M : Automaton) : Set (List M.«Σ») :=
+def language (M : Automaton) : Set (List M.«Σ») :=
   { w | accepts M w }
+
+def L := language
