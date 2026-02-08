@@ -1,7 +1,5 @@
 import Mathlib.Data.Set.Basic
 
-set_option trace.Meta.Tactic.simp.rewrite true
-
 structure Automaton where
   Q : Type
   «Σ» : Type
